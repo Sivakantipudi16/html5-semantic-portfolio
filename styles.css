@@ -1,14 +1,15 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: #f3f4f6;
-    color: #333;
+    background: linear-gradient(135deg, #eef2ff, #f0fdf4);
+    color: #1f2937;
 }
 
 header {
-    background: #1e293b;
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
     color: white;
     padding: 20px 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 nav ul {
@@ -25,34 +26,46 @@ nav a {
 }
 
 nav a:hover {
-    color: #60a5fa;
+    color: #fde68a;
 }
 
 .hero {
     text-align: center;
-    padding: 70px 20px;
+    padding: 80px 20px;
 }
 
 .hero h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    color: #2563eb;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #475569;
 }
 
 .btn {
     display: inline-block;
-    background: #2563eb;
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
     color: white;
-    padding: 12px 25px;
-    border-radius: 8px;
+    padding: 14px 30px;
+    border-radius: 30px;
     text-decoration: none;
-    margin-top: 20px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background: #1d4ed8;
+    transform: scale(1.05);
 }
 
 .skills {
     padding: 40px;
+}
+
+.skills h2 {
+    text-align: center;
+    color: #2563eb;
 }
 
 .card-container {
@@ -65,20 +78,29 @@ nav a:hover {
     flex: 1;
     min-width: 250px;
     background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: 0.3s;
+    border-top: 5px solid #2563eb;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.card:nth-child(2) {
+    border-top-color: #10b981;
+}
+
+.card:nth-child(3) {
+    border-top-color: #f59e0b;
 }
 
 .card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
 }
 
 footer {
     background: #1e293b;
     color: white;
     text-align: center;
-    padding: 15px;
-    margin-top: 30px;
+    padding: 20px;
+    margin-top: 40px;
 }
