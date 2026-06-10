@@ -3,15 +3,13 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 20px;
+    background-color: #f4f4f4;
 }
 
-header,
-nav,
-main,
-section,
-article,
-footer {
-    padding: 1rem;
+header {
+    background: #1f2937;
+    color: white;
+    padding: 20px;
 }
 
 nav ul {
@@ -21,17 +19,29 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
-a {
+nav a {
+    color: white;
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+main {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+article {
+    margin-bottom: 20px;
 }
 
 footer {
+    text-align: center;
     margin-top: 30px;
+    padding: 15px;
+    background: #1f2937;
+    color: white;
 }
